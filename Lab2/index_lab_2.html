@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторийн ажил 2 - HTML Маягт | Профайл засварлах</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        fieldset {
+            border: 2px solid #3498db;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+        legend {
+            color: #2980b9;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 0 10px;
+        }
+        label {
+            display: inline-block;
+            margin: 8px 0;
+            color: #333;
+        }
+        input, select, textarea {
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-row {
+            margin-bottom: 10px;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .svg-box {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Хэрэглэгчийн профайл засварлах</h1>
+        <p><strong>Лабораторийн ажил 2:</strong> HTML маягт болон оролтын талбаруудыг ашиглан профайлаа засварлаарай.</p>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            <!-- Хувийн мэдээлэл -->
+            <fieldset>
+                <legend>Хувийн мэдээлэл</legend>
+
+                <div class="form-row">
+                    <label for="urgiin_ovog">Ургийн овог:</label><br>
+                    <input type="text" id="urgiin_ovog" name="urgiin_ovog" value="Боржигин"><br>
+
+                    <label for="ovog">Овог:</label><br>
+                    <input type="text" id="ovog" name="ovog" value="Дорждэрэм"><br>
+
+                    <label for="ner">Нэр:</label><br>
+                    <input type="text" id="ner" name="ner" value="Энхжаргал"><br>
+
+                    <label for="nas">Нас (number):</label><br>
+                    <input type="number" id="nas" name="nas" min="1" max="120" value="20"><br>
+
+                    <label for="torsen_oi">Төрсөн огноо (date):</label><br>
+                    <input type="date" id="torsen_oi" name="torsen_oi" value="2005-06-15"><br>
+
+                    <label for="tursen_burtgel">Бүртгэлийн цаг (datetime-local):</label><br>
+                    <input type="datetime-local" id="tursen_burtgel" name="burtgel_ts" value="2026-10-06T09:30"><br>
+
+                    <label for="sar">Төрсөн сар (month):</label><br>
+                    <input type="month" id="sar" name="torsen_sar" value="2005-06"><br>
+
+                    <label for="doloo">Долоо хоног (week):</label><br>
+                    <input type="week" id="doloo" name="doseho" value="2026-W40"><br>
+
+                    <label for="tsag">Одоогийн цаг (time):</label><br>
+                    <input type="time" id="tsag" name="tsag" value="10:15"><br>
+                </div>
+            </fieldset>
+
+            <!-- Холбоо барих мэдээлэл -->
+            <fieldset>
+                <legend>Холбоо барих мэдээлэл</legend>
+
+                <div class="form-row">
+                    <label for="utats">Утастай дугаар (tel):</label><br>
+                    <input type="tel" id="utats" name="utas" value="+976-9911-2233"><br>
+
+                    <label for="email">Цахим шуудан (email):</label><br>
+                    <input type="email" id="email" name="email" value="enchjargal@example.com"><br>
+
+                    <label for="website">Вэбсайт / Facebook хаяг (url):</label><br>
+                    <input type="url" id="website" name="website" value="https://facebook.com/enchjargal"><br>
+
+                    <label for="password">Нууц үг (password):</label><br>
+                    <input type="password" id="password" name="password" value="12345678"><br>
+
+                    <!-- hidden input -->
+                    <input type="hidden" id="hidden_id" name="user_id" value="MN-2026-00123"><br>
+                </div>
+            </fieldset>
+
+            <!-- Сонголтууд ба тохируулга -->
+            <fieldset>
+                <legend>Сонголт ба тохируулга</legend>
+
+                <div class="form-row">
+                    <label>Хүйс (radio):</label><br>
+                    <input type="radio" id="er" name="huuis" value="er" checked>
+                    <label for="er">Эр</label>
+                    <input type="radio" id="emegtey" name="huuis" value="emegtey">
+                    <label for="emegtey">Эмэгтэй</label><br>
+
+                    <label>Сонирхол (checkbox):</label><br>
+                    <input type="checkbox" id="sport" name="sonirhol" value="sport" checked>
+                    <label for="sport">Спорт</label>
+                    <input type="checkbox" id="nom" name="sonirhol" value="nom" checked>
+                    <label for="nom">Ном унших</label>
+                    <input type="checkbox" id="kod" name="sonirhol" value="kod">
+                    <label for="kod">Програмчлал</label>
+                    <input type="checkbox" id="amrag" name="sonirhol" value="amrag">
+                    <label for="amrag">Аялал</label><br>
+
+                    <label for="color">Дуртай өнгө (color):</label><br>
+                    <input type="color" id="color" name="durtai_onge" value="#3498db"><br>
+
+                    <label for="onono">Мэдрэмжийн түвшин (range 0-100):</label><br>
+                    <input type="range" id="onono" name="unselt" min="0" max="100" value="75"><br>
+
+                    <label for="file">Зураг файл сонгох (file):</label><br>
+                    <input type="file" id="file" name="zura" accept="image/*"><br>
+
+                    <label for="button_input">Input button (товч):</label><br>
+                    <input type="button" id="button_input" value="Товчихад юу ч хийхгүй" onclick="alert('Input button ажиллалаа!')"><br>
+                </div>
+            </fieldset>
+
+            <!-- Боловсрол, туршлага -->
+            <fieldset>
+                <legend>Боловсрол, туршлага</legend>
+
+                <div class="form-row">
+                    <label for="surguuli">Сургууль (select):</label><br>
+                    <select id="surguuli" name="surguuli">
+                        <option value="mnsis">МУИС - Шинжлэх ухааны их сургууль</option>
+                        <option value="num" selected>ШУТИС - Санхүү, эдийн засгийн дээд сургууль</option>
+                        <option value="msea">МҮАБЗ-ийн их сургууль</option>
+                        <option value="busad">Бусад</option>
+                    </select><br>
+
+                    <label for="tavilbar">Төлөв (select group):</label><br>
+                    <select id="tavilbar" name="tavilbar">
+                        <optgroup label="Сурагч">
+                            <option value="1cir" selected>1 дүгээр курс</option>
+                            <option value="2cir">2 дахь курс</option>
+                            <option value="3cir">3 дахь курс</option>
+                            <option value="4cir">4 дэх курс</option>
+                        </optgroup>
+                        <optgroup label="Төгсөгч">
+                            <option value="bach">Бакалавр</option>
+                            <option value="mag">Магистр</option>
+                        </optgroup>
+                    </select><br>
+
+                    <label for="tuvshin">Өөрийгөө тодорхойлох товч тайлбар (textarea):</label><br>
+                    <textarea id="tuvshin" name="tuvshin" rows="4" cols="50">Би ШУТИС-ийн Мэдээлэл технологиорийн сургуульд сурч байна. Програмчлал, вэб хөгжүүлэлтэд сонирхолтой.</textarea><br>
+                </div>
+            </fieldset>
+
+            <!-- Товчнууд -->
+            <div class="buttons">
+                <button type="submit">Илгээх</button>
+                <button type="reset">Цэвэрлэх</button>
+                <button type="button" onclick="alert('Энэ бол ердийн button таг!')">Ердийн товч</button>
+            </div>
+
+            <!-- SVG зураг -->
+            <div class="svg-box">
+                <h2>SVG зураг - Хэрэглэгчийн тэмдэглэгээ</h2>
+                <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="100" r="90" fill="#ecf0f1" stroke="#3498db" stroke-width="4"/>
+                    <circle cx="100" cy="75" r="30" fill="#3498db"/>
+                    <path d="M 45 160 Q 100 100 155 160 L 155 175 Q 100 200 45 175 Z" fill="#3498db"/>
+                    <text x="100" y="195" text-anchor="middle" font-size="12" fill="#2c3e50">Профайл зураг</text>
+                </svg>
+            </div>
+
+        </form>
+
+        <p style="margin-top: 25px;"><strong>Тэмдэглэл:</strong> Энэ маягтын бүх оролтын талбаруудын анхны утгыг өөрийн мэдээллээр бөглөсөн. Даалгаврын шаардлагын дагуу text, number, date, datetime-local, checkbox, radio, color, email, file, hidden, month, password, range, tel, url, time, week, button, submit, reset зэрэг input төрлүүд, мөн textarea, select, button тагууд, SVG зургийг ашигласан.</p>
+    </div>
+</body>
+</html>
