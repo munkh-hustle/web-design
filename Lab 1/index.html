@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="mn">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Үнэлгээ: HTML, HEAD, BODY, TITLE тагууд -->
+    <title>Миний CV - Батмөнхийн Танилцуулга</title>
+
+    <!-- Энэ лабораторийн ажилд зориулсан хялбар CSS загвар -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2c5f8a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 25px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 15px;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: #2c5f8a;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid #bbb;
+            padding: 8px 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #e8f0f7;
+        }
+
+        video, audio, iframe {
+            max-width: 100%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            color: #777;
+            font-size: 14px;
+        }
+
+        .zurag-bild {
+            display: block;
+            margin: 0 auto 10px auto;
+            border-radius: 50%;
+            border: 4px solid #2c5f8a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Толгой хэсэг: H1 таг -->
+    <header>
+        <h1>ЦАХИМ ХУВИЙН ТӨӨБАТАЛ (CV)</h1>
+        <p><strong>Лабораторийн ажил 1: HTML вэб хуудас</strong></p>
+    </header>
+
+    <div class="container">
+
+        <!-- ==================================================
+             1. ЗУРАГ ХЭСЭГ (IMG таг)
+             ================================================== -->
+        <section>
+            <h2>Зураг</h2>
+            <!-- Одоогоор загварын зураг ашигласан.
+                 Өөрийн зурагаа "zurag.jpg" нэртэй ижил хавтсанд хадгална уу. -->
+            <img class="zurag-bild" src="zurag.jpg" alt="Миний зураг" width="200" height="200"
+                 onerror="this.onerror=null; this.src='https://via.placeholder.com/200x200.png?text=ZURAG';">
+            <p style="text-align:center;">Дээрх нь миний <strong>загварын зураг</strong> юм.</p>
+        </section>
+
+        <!-- ==================================================
+             2. ХУВИЙН МЭДЭЭЛЭЛ (H2-H6, P, BR, STRONG тагууд)
+             ================================================== -->
+        <section>
+            <h2>Хувийн мэдээлэл</h2>
+            <h3>Ургийн овог, овог, нэр, төрсөн газар</h3>
+            <p>
+                <strong>Ургийн овог:</strong> Дөрвөд<br>
+                <strong>Овог:</strong> Бат<br>
+                <strong>Нэр:</strong> Мөнх-Эрдэнэ<br>
+                <strong>Төрсөн газар:</strong> Монгол Улс, Улаанбаатар хот
+            </p>
+        </section>
+
+        <!-- ==================================================
+             3. ХОЛБОО БАРИХ МЭДЭЭЛЭЛ (UL, LI, A тагууд)
+             ================================================== -->
+        <section>
+            <h2>Холбоо барих мэдээлэл</h2>
+            <ul>
+                <li><strong>Хаяг:</strong> Монгол Улс, Улаанбаатар хот, Сүхбаатар дүүрэг, 1-р хороо</li>
+                <li><strong>Утас:</strong> <a href="tel:+97699112233">+976 9911-2233</a></li>
+                <li><strong>Цахим шуудан:</strong> <a href="mailto:menkhi@example.com">menkhi@example.com</a></li>
+                <li><strong>Facebook хаяг:</strong> <a href="https://www.facebook.com/menkhi.example" target="_blank">facebook.com/menkhi.example</a></li>
+            </ul>
+        </section>
+
+        <!-- ==================================================
+             4. ХЭЛНИЙ МЭДЛЭГ (OL, LI тагууд)
+             ================================================== -->
+        <section>
+            <h2>Хэлний мэдлэг</h2>
+            <ol>
+                <li><strong>Монгол хэл</strong> — Эх хэл</li>
+                <li><strong>Англи хэл</strong> — Дунд зэрэг (Intermediate)</li>
+                <li><strong>Орос хэл</strong> — Анхан зэрэг (Beginner)</li>
+                <li><strong>Солонгос хэл</strong> — Анхан зэрэг (TOPIK 1)</li>
+            </ol>
+        </section>
+
+        <!-- ==================================================
+             5. АВЪЯАС, ЧАДВАР (TABLE, TR, TD тагууд)
+             ================================================== -->
+        <section>
+            <h2>Авъяас, чадвар</h2>
+            <table>
+                <tr>
+                    <th>Чадварын нэр</th>
+                    <th>Түвшин</th>
+                    <th>Тайлбар</th>
+                </tr>
+                <tr>
+                    <td>HTML, CSS</td>
+                    <td>Дунд</td>
+                    <td>Вэб хуудасны үндсэн бүтцийг гүйцэд бичиж чадна</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Анхан</td>
+                    <td>Хялбар интерактив функц бичиж чадна</td>
+                </tr>
+                <tr>
+                    <td>Зураг татах / дизайн</td>
+                    <td>Дунд</td>
+                    <td>Photoshop, Canva ашиглаж чадна</td>
+                </tr>
+                <tr>
+                    <td>Багийн ажил</td>
+                    <td>Өндөр</td>
+                    <td>Хариуцлагатай, харилцааны өндөр соёлтой</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- ==================================================
+             6. ХОББИ (UL таг)
+             ================================================== -->
+        <section>
+            <h2>Хобби</h2>
+            <ul>
+                <li>Фотограф авлах</li>
+                <li>Уулын явган аялал</li>
+                <li>Програмчлалын шинэ технологи судлах</li>
+                <li>Хөгжим сонсох, гитар тоглох</li>
+            </ul>
+        </section>
+
+        <!-- ==================================================
+             7. БОЛОВСРОЛ (TABLE, TR, TD тагууд)
+             ================================================== -->
+        <section>
+            <h2>Боловсрол</h2>
+            <table>
+                <tr>
+                    <th>Хаана</th>
+                    <th>Хэзээ</th>
+                    <th>Ямар боловсрол</th>
+                </tr>
+                <tr>
+                    <td>Шинэ Эрдэм Их Сургууль</td>
+                    <td>2013–2017</td>
+                    <td>Мэдээллийн технологийн бакалавр</td>
+                </tr>
+                <tr>
+                    <td>Шинэ Эрдэм Их Сургууль</td>
+                    <td>2024–одоо</td>
+                    <td>Мэдээллийн системийн магистрант (эзэмшиж байна)</td>
+                </tr>
+                <tr>
+                    <td>Онцлох №15 дунд сургууль</td>
+                    <td>2010–2013</td>
+                    <td>Ерөнхий боловсрол</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- ==================================================
+             8. ДУРТАЙ КЛИП (VIDEO таг)
+             ================================================== -->
+        <section>
+            <h2>Дуртай клип</h2>
+            <p>Доорх видео нь миний <strong>дуртай клип</strong> юм. Тоглуулахын тулд play дарна уу.</p>
+            <!-- Одоогоор загварын видео. Өөрийн "klip.mp4" файлаараа солино уу. -->
+            <video width="640" height="360" controls poster="https://via.placeholder.com/640x360.png?text=VIDEO">
+                <source src="klip.mp4" type="video/mp4">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Таны браузераар видео тоглуулах боломжгүй байна.
+            </video>
+        </section>
+
+        <!-- ==================================================
+             9. ДУРТАЙ ДУУ (AUDIO таг)
+             ================================================== -->
+        <section>
+            <h2>Дуртай дуу</h2>
+            <p>Энэ бол миний <strong>дуртай дуу</strong>. Сонсохын тулд доорх тоглуулагчийг ашиглана уу.</p>
+            <!-- Одоогоор загварын аудио. Өөрийн "duutay.mp3" файлаараа солино уу. -->
+            <audio controls>
+                <source src="duutay.mp3" type="audio/mpeg">
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                Таны браузераар аудио тоглуулах боломжгүй байна.
+            </audio>
+        </section>
+
+        <!-- ==================================================
+             10. ОЧИХ ДУРТАЙ ГАЗАР (IFRAME таг - Google Map)
+             ================================================== -->
+        <section>
+            <h2>Очих дуртай газрын байршил</h2>
+            <p>Би <strong>Горхи-Тэрэлж националь парк</strong> очихыг хамгийн ихэд дуртай. Газрын зурагаар үзээрэй.</p>
+            <iframe
+                src="https://www.google.com/maps?q=Gorkhi-Terelj+National+Park,+Mongolia&output=embed"
+                width="100%" height="400" style="border:0;" allowfullscreen=""
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                title="Горхи-Тэрэлж националь паркийн байршил">
+            </iframe>
+        </section>
+
+    </div>
+
+    <!-- Холбоос жагсаалт (A таг дахин ашигласан) -->
+    <footer>
+        <p>
+            Илүү дэлгэрэнгүй мэдээлэл авахыг хүсвэл
+            <a href="https://orcid.org/" target="_blank">миний профай</a>-руу холбогдоорой.<br>
+            © 2026 Батмөнхийн Мөнх-Эрдэнэ. Бүх эрх хуулиар хамгаалагдсан.
+        </p>
+    </footer>
+
+</body>
+
+</html>
